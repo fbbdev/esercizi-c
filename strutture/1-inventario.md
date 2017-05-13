@@ -12,6 +12,7 @@ Bisogna:
   2. Implementare le seguenti funzioni:
       - `box_value`: data una cassetta, calcolarne il valore totale (se fosse venduta intera).
       - `stock_boxes`: dato l'inventario e un tipo di frutta, restituire il numero di cassette contenenti quel tipo di frutta.
+                       Si noti che le cassette vuote (dove il numero di frutti è uguale a zero) non devono essere contate.
       - `stock_value`: dato l'inventario e un tipo di frutta, restituire il valore totale delle cassette contenenti quel tipo
                        di frutta.
       - `stock_total_value`: dato l'inventario, calcolare il valore totale della merce disponibile.
