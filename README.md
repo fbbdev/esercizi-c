@@ -1,1 +1,4 @@
-Esercizi di programmazione in C
+# Esercizi di programmazione in C
+
+  - [Strutture](strutture)
+  
