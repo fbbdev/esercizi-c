@@ -18,9 +18,9 @@ typedef struct Operation {
 } Operation;
 ```
 
-Implementare la funzione `run_op` con il seguente prototipo:
+Implementare la funzione `run_ops` con il seguente prototipo:
 ```c
-float run_op(float lhs, Operation ops[]);
+float run_ops(float lhs, Operation ops[]);
 ```
 
 La funzione dovrà, per ogni elemento dell'array `ops`, svolgere l'operazione indicata
