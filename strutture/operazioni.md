@@ -20,13 +20,13 @@ typedef struct Operation {
 
 Implementare la funzione `run_ops` con il seguente prototipo:
 ```c
-float run_ops(float lhs, Operation ops[]);
+float run_ops(float lhs, Operation ops[], size_t n);
 ```
 
-La funzione dovrà, per ogni elemento dell'array `ops`, svolgere l'operazione indicata
-dal campo `operator` fra il risultato dell'operazione precedente e il valore del campo `rhs`.
-Per il primo elemento non c'è un risultato precedente, perciò si deve operare sul valore
-dell'argomento `lhs` della funzione.
+La funzione dovrà, per ogni elemento dell'array `ops` (costituito da `n` elementi), svolgere
+l'operazione, indicata dal campo `operator`, fra il risultato dell'operazione precedente e
+il valore del campo `rhs`. Per il primo elemento non c'è un risultato precedente,
+perciò si deve operare sul valore dell'argomento `lhs` della funzione.
 
 Ad esempio, se la sequenza in `ops` fosse:
 ```c
