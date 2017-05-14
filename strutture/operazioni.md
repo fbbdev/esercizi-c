@@ -15,20 +15,20 @@ E la seguente struttura:
 typedef struct Operation {
     Operator operator;
     float rhs;
-};
+} Operation;
 ```
 
 Implementare la funzione `run_op` con il seguente prototipo:
 ```c
-float run_op(float lhs, Operation op[]);
+float run_op(float lhs, Operation ops[]);
 ```
 
-La funzione dovrà, per ogni elemento dell'array `op`, svolgere l'operazione indicata
+La funzione dovrà, per ogni elemento dell'array `ops`, svolgere l'operazione indicata
 dal campo `operator` fra il risultato dell'operazione precedente e il valore del campo `rhs`.
 Per il primo elemento non c'è un risultato precedente, perciò si deve operare sul valore
 dell'argomento `lhs` della funzione.
 
-Ad esempio, se la sequenza in `op` fosse:
+Ad esempio, se la sequenza in `ops` fosse:
 ```c
 {
     { Add, 10 },
@@ -37,7 +37,7 @@ Ad esempio, se la sequenza in `op` fosse:
     { Div,  3 }
 }
 ```
-Il risultato sarebbe:
+Il risultato dovrebbe essere calcolato così:
 ```c
 (((lhs + 10) * 4) - 8) / 3
 ```
