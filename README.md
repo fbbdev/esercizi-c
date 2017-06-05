@@ -1,4 +1,4 @@
 # Esercizi di programmazione in C
 
-  - [Strutture](strutture)
-  - [Sequenze](sequenze)
+  - [Strutture](strutture/README.md)
+  - [Sequenze](sequenze/README.md)
