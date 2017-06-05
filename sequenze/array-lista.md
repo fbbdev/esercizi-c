@@ -16,3 +16,14 @@ Node* array_to_list(int a[], size_t n);
 
 Dato l'array di interi `a` di lunghezza `n`, la funzione dovrà creare e
 restituire una lista contenente tutti gli elementi di a, nello stesso ordine.
+
+## Suggerimenti
+
+Per creare un nodo, dopo aver incluso `stdlib.h` utilizzare le seguenti
+istruzioni:
+```c
+Nodo* n = malloc(sizeof(Nodo));
+n->data = /* ... */;
+n->next = /* ... */;
+n->prev = /* ... */;
+```
